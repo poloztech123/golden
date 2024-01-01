@@ -49,8 +49,8 @@ https://templatemo.com/tm-581-kind-heart-charity
 -----------------------------------------*/
 :root {
   --white-color:                  #ffffff;
-  --primary-color:                #5bc1ac;
-  --secondary-color:              #5a6f80;
+  --primary-color:                #F6B436;
+  --secondary-color:              hsl(207, 17%, 43%);
   --section-bg-color:             #f0f8ff;
   --site-footer-bg-color:         #44525d;
   --custom-btn-bg-color:          #597081;
@@ -296,18 +296,6 @@ strong {
   line-height: 30px;
 }
 
-
-/*---------------------------------------
-  AVATAR IMAGE - TESTIMONIAL, AUTHOR               
------------------------------------------*/
-.avatar-image {
-  border-radius: var(--border-radius-large);
-  width: 65px;
-  height: 65px;
-  object-fit: cover;
-}
-
-
 /*---------------------------------------
   CUSTOM BUTTON               
 -----------------------------------------*/
@@ -403,61 +391,6 @@ strong {
   color: var(--primary-color);
 }
 
-.dropdown-menu {
-  background: var(--white-color);
-  box-shadow: 0 1rem 3rem rgba(0,0,0,.175);
-  border: 0;
-  max-width: 50px;
-  padding: 0;
-  margin-top: 20px;
-}
-
-.dropdown-item {
-  display: inline-block;
-  color: var(--p-bg-color);
-  font-size: var(--menu-font-size);
-  font-weight: var(--font-weight-medium);
-  position: relative;
-  padding-top: 10px;
-  padding-bottom: 10px;
-}
-
-.dropdown-menu li:last-child .dropdown-item {
-  padding-top: 0;
-}
-
-.dropdown-item.active, 
-.dropdown-item:active,
-.dropdown-item:focus, 
-.dropdown-item:hover {
-  background: transparent;
-  color: var(--primary-color);
-}
-
-.dropdown-toggle::after {
-  content: "\f282";
-  display: inline-block;
-  font-family: bootstrap-icons !important;
-  font-size: var(--copyright-font-size);
-  font-style: normal;
-  font-weight: normal !important;
-  font-variant: normal;
-  text-transform: none;
-  line-height: 1;
-  vertical-align: -.125em;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  position: relative;
-  left: 2px;
-  border: 0;
-}
-
-@media screen and (min-width: 992px) {
-  .dropdown:hover .dropdown-menu {
-    display: block;
-    margin-top: 0;
-  }
-}
 
 .navbar-toggler {
   border: 0;
@@ -937,39 +870,6 @@ blockquote::before {
 .carousel-name-title {
   font-weight: var(--font-weight-semibold);
 }
-
-#testimonial-carousel .carousel-indicators {
-  position: relative;
-  top: 150px;
-  bottom: auto;
-  margin-top: 50px;
-  margin-bottom: 150px;
-}
-
-#testimonial-carousel .carousel-indicators li {
-  text-indent: inherit;
-  background: transparent;
-  margin: 0 10px; 
-}
-
-#testimonial-carousel .carousel-indicators li,
-#testimonial-carousel .carousel-indicators li::before {
-  width: 45px;
-  height: 45px; 
-}
-
-#testimonial-carousel .carousel-indicators .avatar-image {
-  width: 45px;
-  height: 45px; 
-}
-
-#testimonial-carousel .carousel-indicators .active,
-#testimonial-carousel .carousel-indicators .active .avatar-image {
-  background: transparent;
-  width: 50px; 
-  height: 50px;
-}
-
 
 /*---------------------------------------
   CONTACT               
