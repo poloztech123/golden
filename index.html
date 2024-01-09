@@ -9,6 +9,16 @@
         <link rel="icon" href="images/logo.png">     
         <link href="css/bootstrap.min.css" rel="stylesheet">
         <link href="css/style.css" rel="stylesheet">
+        
+        <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+</script>
+<script src="js/mail.js"></script>
+<script type="text/javascript">
+   (function(){
+      emailjs.init("Mu90y2EidTKcZS1Jv");
+   })();
+</script>
     </head>
     
     <body id="section_1">
@@ -86,7 +96,7 @@
                         </li>
 
                         <li class="nav-item">
-                            <a class="nav-link click-scroll" href="#section_3">Activities</a>
+                            <a class="nav-link click-scroll" href="#section_3">Programs</a>
                         </li>
 
                         <li class="nav-item">
@@ -96,7 +106,9 @@
                         <li class="nav-item">
                             <a class="nav-link click-scroll" href="#section_6">Contact</a>
                         </li>
-
+                        <li class="nav-item">
+                            <a class="nav-link custom" href="gallery.html">Gallery</a>
+                        </li>
                         <li class="nav-item ms-3">
                             <a class="nav-link custom-btn custom-border-btn btn" href="donate.html">Donate</a>
                         </li>
@@ -260,7 +272,7 @@
                     <div class="row">
 
                         <div class="col-lg-6 col-md-5 col-12">
-                            <img src="images/golden/IMG-20230730-WA0016.jpg" class="about-image ms-lg-auto bg-light shadow-lg img-fluid" alt="">
+                            <img src="images/golden/kenneth.jpg" class="about-image ms-lg-auto bg-light shadow-lg img-fluid" alt="">
                         </div>
 
                         <div class="col-lg-5 col-md-7 col-12">
@@ -320,7 +332,7 @@
                     <div class="row">
 
                         <div class="col-lg-12 col-12 text-center mb-4">
-                            <h2>Activities</h2>
+                            <h2>Programs</h2>
                         </div>
 
                         <div class="col-lg-3 col-md-6 col-12 mb-4 mb-lg-0">
@@ -336,7 +348,7 @@
                                                 <li>Functional Adults</li>
                                                 <li>Vocational Skills Training((Fabrication and welding assistive devices for CWDs))</li>
                                                 <li>Special Needs Education</li>
-                                                <li>Evangelism and preaching the community the word God.</li>
+                                                <li>Evangelism and preaching the word of God to the community.</li>
 
                                             </ul>
 
@@ -385,7 +397,9 @@
                                         <h5 class="mb-3">Reproductive Health</h5>
                                         <ul>
                                             <li>Therapy session clinic</li>
+                                            <li>Assistive devices</li>
                                             <li>Seminars and workshops</li>
+                                            <li>Medical Support</li>
                                         </ul>
 
                                         <div class="progress mt-4">
@@ -400,7 +414,7 @@
 
                         <div class="col-lg-3 col-md-6 col-12">
                             <div class="custom-block-wrap">
-                                <img src="images/golden/poltry.jpg" class="custom-block-image img-fluid" alt="poultry farming">
+                                <img src="images/golden/poultry2.jpg" class="custom-block-image img-fluid" alt="poultry farming">
 
                                 <div class="custom-block">
                                     <div class="custom-block-body">
@@ -419,6 +433,25 @@
                                 </div>
                             </div>
                         </div>
+
+
+                        <div class="col-lg-12 col-12 text-center mb-4">
+                            <h2>Therapy Sessions Clinic</h2>
+                        </div>
+                        
+                        <div class="col-lg-6 col-md-6 col-12">
+                            <div class="custom-block-wrap">
+                              <video src="video/theraapy session.mp4" width="520" height="415" controls></video>
+                                
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-6 col-md-6 col-12">
+                                      <video src="video/golden.mp4" width="520" height="415" controls></video>
+                                        
+                                            </div>
+<br><br>
+
 
                         <div class="col-lg-12 col-12 text-center mb-4">
                             <h2>Special Needs Education</h2>
@@ -465,7 +498,7 @@
                                         <input type="text" name="volunteer-subject" id="volunteer-subject" class="form-control" placeholder="Subject" required>
                                     </div>
 
-                                    <div class="col-lg-6 col-12">
+                                    <!-- <div class="col-lg-6 col-12">
                                         <div class="input-group input-group-file">
                                             <input type="file" class="form-control" id="inputGroupFile02">
                                             
@@ -473,7 +506,7 @@
 
                                             <i class="bi-cloud-arrow-up ms-auto"></i>
                                         </div>
-                                    </div>
+                                    </div> -->
                                 </div>
 
                                 <textarea name="volunteer-message" rows="3" class="form-control" id="volunteer-message" placeholder="Comment (Optional)"></textarea>
@@ -766,7 +799,7 @@
                         </div>
 
                         <div class="col-lg-5 col-12 mx-auto">
-                            <form class="custom-form contact-form" action="#" method="post" role="form">
+                            <form class="custom-form contact-form" id="form" role="form">
                                 <h2>Contact form</h2>
 
                                 <p class="mb-4">Or, you can just send an email:
@@ -786,7 +819,7 @@
 
                                 <textarea name="message" rows="5" class="form-control" id="message" placeholder="How may we help you?"></textarea>
 
-                                <button type="submit" class="form-control">Send Message</button>
+                                <button type="button" class="form-control" onclick="sendEmail()">Send Message</button>
                             </form>
                         </div>
 
@@ -810,7 +843,7 @@
 
                             <li class="footer-menu-item"><a href="#section_2" class="footer-menu-link">Newsroom</a></li>
 
-                            <li class="footer-menu-item"><a href="#section_3" class="footer-menu-link">Activities</a></li>
+                            <li class="footer-menu-item"><a href="#section_3" class="footer-menu-link">Programs</a></li>
 
                             <li class="footer-menu-item"><a href="#section_4" class="footer-menu-link">Become a volunteer</a></li>
 
@@ -868,6 +901,7 @@
         <script src="js/click-scroll.js"></script>
         <script src="js/counter.js"></script>
         <script src="js/custom.js"></script>
+    
 
     </body>
 </html>

@@ -30,4 +30,13 @@
     
   })(window.jQuery);
 
+  
 
+  function openLightbox(imageSrc, caption) {
+    document.getElementById('lightboxImage').src= imageSrc;
+    document.querySelector('.lightbox').classList.add('active');
+    document.querySelector('.lightbox img').alt= caption;
+}
+function closeLightbox() {
+    document.querySelector('.lightbox').classList.remove('active');
+}
