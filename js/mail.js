@@ -5,7 +5,7 @@ let last_name = document.getElementById('last-name').value;
 let message = document.getElementById('message').value;
 let form = document.getElementById('form');
 
-emailjs.send("service_vi20xln","template_lapl8ip",{
+emailjs.send("service_brc1q5s","template_8wjruar",{
     email,
     first_name,
     last_name,
