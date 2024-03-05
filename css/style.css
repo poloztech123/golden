@@ -1,17 +1,3 @@
-/*
-
-TemplateMo 581 Kind Heart Charity
-
-https://templatemo.com/tm-581-kind-heart-charity
-
-*/
-
-.donlogo {
-  width: 40%;
-  height: auto;
-}
-
-
 
 
 @font-face {
@@ -676,6 +662,21 @@ transition: transform 0.3s ease-in-out;
 figure:hover {
 transform: scale(1.1);
 }  
+
+.wallet {
+  padding-left: 20px;
+text-align: left;
+}
+
+
+.wallet img {
+  width: 4%;
+  height: auto;
+}
+
+.wallet figure {
+align-items: left;
+}
 
 img {
 width: 100%;
